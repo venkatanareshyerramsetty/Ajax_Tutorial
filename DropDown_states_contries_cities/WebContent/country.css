@@ -1,0 +1,85 @@
+
+body{
+
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgb(174, 190, 190);
+    
+
+}
+
+#country{
+
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color:  rgb(166, 177, 10);
+    border-radius: 20px;
+    box-shadow: 10px,black;
+    margin: 10px;
+    color: #400040;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    
+}
+
+#state_css{
+
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(166, 177, 10);
+    border-radius: 20px;
+    box-shadow: 10px,black;
+    color: #400040;
+    font-size: 15px;
+    margin: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    
+}
+
+#city_css{
+
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(166, 177, 10);
+    border-radius: 20px;
+    box-shadow: 10px,black;
+    margin: 10px;
+    color: #400040;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+#country_div{
+	
+	font-size:20px;
+	color: #e93616;
+	font-weight: bold;
+	
+}
+
+
+#state{
+	
+	font-size:20px;
+	color: #e93616;
+	font-weight: bold;
+	
+}
+
+#city{
+	
+	font-size:20px;
+	color: #e93616;
+	font-weight: bold;
+	
+}
