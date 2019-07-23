@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ap-govt-logo.png">
+     <link rel="stylesheet" href="login.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script>
+
+$(document).ready(function(){     
+  $("#loginButton").click(function(){
+    alert();
+     $.ajax({url: "https://bhunaksha.ap.gov.in/REST/allUserNames", success: function(result){
+        
+        console.log(result);
+        var inputData = {};
+             console.log(book);
+             $('#loginButton').click(function () {
+                user_name = ($('#username').val());
+                password =$('#password').val();
+               
+
+                inputData={
+                  user_name:user_name,
+                  password:password
+                };
+                
+                 var inputDataJSON = JSON.stringify(inputData);
+
+                 for (var i = 0; i < result.length; i++) {
+
+                     if(username==result[i] || password == result[i]){
+
+                         alert("login successfull");
+
+                     }
+
+                     else{
+
+                         alert("login failed");
+                     }
+                 }
+                 
+             });
+     
+    }});
+  });
+
+  
+
+});
+
+
+</script>
+
+
+<body>
+
+
+     <!--main header-->
+     <div id="maindiv">
+            <img class="header_img" src="assets/images/header4.jpg" />
+            
+             <!--Main Navigation-->
+    <div id="navbar">
+             <!-- Dropdown Navbar -->
+    <nav>
+            <ul>
+                <li>
+                    <a href="Updated_Home_Page.html"><i style="margin-right: 5px;" class="fa fa-home"></i>Home</a>
+                </li>
+                    <li>
+                        <a href="AboutUS.html"><i style="margin-right: 5px;"class="fa fa-id-card"></i>About Us</a>
+                    </li>
+
+                    <li class="Surveydropdown">
+                    <a href="#">Services<i style="margin-left: 5px;" class="fa fa-caret-down"></i></a>
+                    <div class="Surveydropdown_list">
+                            <a href="https://bhunaksha.ap.gov.in" target="_blank">Bhunaksha</a>
+                            <a  href="https://bhunaksha.ap.gov.in/e-Secure/index.xhtml" target="_blank">Digital Signing</a>
+                            <a  href="https://bhunaksha.ap.gov.in/bhunaksha/28/indexmain.jsp" target="_blank">Online SubDivision</a>
+                            <a  href="https://bhunaksha.ap.gov.in/bhunaksha/28/login.jsp" target="_blank">login</a>
+                            <a  href="https://bhunaksha.ap.gov.in/bhunaksha/28/indexmain.jsp" target="_blank">Geo reference</a>
+                    </div>
+                    </li>
+
+
+                    <li class="dropdown">
+                    <a href="#">Settlement<i style="margin-left: 5px;" class="fa fa-caret-down"></i></a>
+                    <div class="dropdown_list">
+                    <a href="#">Acts&Rules</a>
+                    <a href="#">Manuals</a>
+                     </div>
+                    </li>
+
+                    <li>
+                    <a href="PDF_test.html"><i class="fa fa-book"></i> Training </a>
+                     </li>
+
+                     <li class="dropdown">
+                     <a href="#">RTI Act <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown_list">
+                        <a href="PDF_test.html">RTI Act-1</a>
+                        <a href="#">RTI Act-2</a>
+                        </div>
+                    </li>
+
+                    <li>
+                    <a href="#"><i class="fa fa-bell"></i> Circulars</a>
+                     </li>
+
+                    <li>
+                    <a href="Galary_LandServey.html"><i class="fa fa-image"></i> Galary</a>
+                    </li>
+
+                    <li>
+                        <a href="ContactUs.html"><i class="fa fa-envelope"></i> Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="Login_LandServey.html"><i class="fa fa-sign-in"></i> Login</a>
+                    </li>    
+                
+            </ul>
+        </nav>
+    
+    </div>
+
+    </div>
+
+
+<!-- Login Form -->
+<div class="form-div">
+    
+    <h2>Login Here</h2>
+    <form  action="" method="get" name="vform">
+        <div id="username_div">
+       <input type="text" id="username" name="User Name" placeholder="User Name">
+        <div id="name_error"></div>
+        </div>
+        <br>
+
+        <div id="pass_confirm_div"></div>
+        <input type="password" id="password" name="Password" placeholder="Password">
+        <div id="password_error"></div>
+        <br>
+
+        <input id="loginButton" type="submit" value="Login">
+        
+        
+
+        <a id="register" href="#">REGISTER</a>
+    </form>
+</div>
+
+
+<div id="footer">
+        <!-- Main Footer -->
+
+<table class="footer_table" style="width: 100%">
+
+   <tr>
+       <td></td>
+       <td>
+           <p>
+                   Designed, Developed & Maintained by : National Informatics Centre, APSC, Amaravathi.</br>
+                   Disclaimer : Content on this website is published and managed by Department of AP, GoAP, Amaravathi.
+                  
+           </p>
+       </td>
+
+       <td style="width: 20%">
+           <img src="img/niclogo.png">
+       </td>
+   </tr>
+
+</table>
+   
+   </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
