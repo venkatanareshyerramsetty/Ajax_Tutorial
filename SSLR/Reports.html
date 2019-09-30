@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Department of Survey, Settlements & Land Records</title>
+<link rel="icon" type="image/x-icon" href="assets/images/ap-govt-logo.png">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" />
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="js/table2excel.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Coda&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Reports.css">
+<script src="Reports.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+            <div class="row">
+        
+               <div  class="col-lg-12 col-md- 12 col-sm-12">
+        
+                    <h3 class="reports_header">TourDairy-Reports</h3>
+        
+               </div>
+
+            </div>
+
+
+
+        <div class="row">
+
+
+             <div  class="col-lg-2 col-md- 2 col-sm-12">
+                
+                <button type="submit" id="logout_button"  class="btn btn-primary" onclick="sessionStorageClear()">Logout</button> 
+
+               
+              </div>
+
+         </div> 
+
+
+
+
+         <div class="row">
+                        <div class="col-sm-3">
+                            <div class="main-content">
+    
+                                     <div id="count_table">
+    
+                                     </div>
+    
+    
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <!--Nested rows within a column-->
+                            <div class="row">
+                                <div class="col-12">
+    
+                                    <div class="sidebar-content">
+                                      <div class="row">
+    
+                                                                    <div  class="col-lg-4 col-md- 4 col-sm-4">
+                            
+                                                                            <h4 class="selection">Please select option to view-report</h4>
+                                                                      
+                                                                    </div>
+                                    
+                                    
+                                                                    <div class="col-lg-4 col-md- 4 col-sm-4">
+                                                                            <select class="select_option">
+                                                                                    <option value="1">F-line</option>;
+                                                                                    <option value="2">Patta Subdivision</option>;
+                                                                                    <option value="3">Land Acquisition</option>;
+                                                                                    <option value="4">Assignment</option>;
+                                                                                    <option value="5">Alienation</option>;
+                                                                                    <option value="6">Government Land Refixing</option>;
+                                                                                    <option value="7">House Site Plot Layout</option>;
+                                                                                    <option value="8">Record Work</option>;
+                                                                                    <option value="9">Meeting</option>;
+                                                                                    <option value="10">Followed with Officers</option>;
+                                                                                    <option value="11">Field Inspection(officer) </option>;
+                                                                                    <option value="12">Incorporation of Changes</option>;
+                                                                                    <option value="13">Applied Demarcation</option>;
+                                                                                    <option value="14">Pre Scrutiny/Scrutiny</option>;
+                                                                                    <option value="15">Others,Specify</option>;
+                                                                                    <option value="16">Holidays</option>;
+                                                                                    <option value="17">Leaves</option>;
+                                                                                    <option value="18">Field Inspection(Surveyor)</option>;
+                                                                                    <option value="19">Grievance Petitions</option>;
+                                                                            </select>
+                                                      
+                                                                           
+                                                                        
+                                                                       </div>
+                                    
+                                    
+                                                                       <div  class="col-lg-1 col-md- 2 col-sm-1 offset-sm-2">
+                                              
+                                                                            <button type="submit" id="view_button"  class="btn btn-primary" onclick="viewReportsByNatureOfWork(),buttonCreation()">View-Report</button> 
+                                                          
+                                                                       
+                                                                        
+                                                                        </div>
+                            
+                            
+                                      </div>     
+                                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    
+                                <div class="col-6">
+                                    <div class="sidebar-content">
+                                    <div class="row">   
+    
+                        
+                                    <div id="download_button" class="col-lg-12 col-md- 12 col-sm-12">
+                                            
+                                    </div>
+                                            
+                                    <div  class="col-lg-12 col-md-12 col-sm-12">
+                                            
+                                            <div id="report_table"> 
+                                                        
+                                            </div>
+                                                        
+                                    </div>
+                                            
+                                            
+                                 </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+            <!-- Main Footer -->
+        
+        <table class="footer_table" style="width: 100%">
+        
+        <tr>
+           <td style="width: 20%"></td>
+           <td style="width: 60%">
+               <p>
+                       Designed, Developed & Maintained by : National Informatics Centre, APSC, Amaravathi.</br>
+                       Disclaimer : Content on this website is published and managed by Department of AP, GoAP, Amaravathi.
+                      
+               </p>
+           </td>
+        
+           <td style="width: 20%; text-align: right">
+               <img src="img/niclogo.png">
+           </td>
+        </tr>
+        
+        </table>
+        
+        </div>
+      
+
+
+</body>
+
+
+</html>

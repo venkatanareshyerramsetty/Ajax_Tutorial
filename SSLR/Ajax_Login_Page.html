@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Login page</title>
+<link rel="icon" type="image/x-icon" href="assets/images/ap-govt-logo.png">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="login.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script>
+
+    var result = [];
+$(document).ready(function(){
+     $("#loginButton").click(function(){
+        username = $('#username').val();
+        password =$('#password').val();
+
+        console.log(username);
+        console.log(password);
+     $.ajax({url: "https://bhunaksha.ap.gov.in/REST/getTaluk_District_Village/'"+username+"'/'"+password+"'", success: function(data){
+              
+        console.log(data);
+
+        for(i in data){
+                result.push(data[i]);
+            }
+
+            if(result.length==0){
+
+               alert("please  check your login credentials")
+            }
+
+    
+          console.log(result[0][0]);
+              
+               if(username == result[0][0].user_name  & password == result[0][0].password){
+
+               alert("login successfull");
+                  }
+               else{
+                    alert("login failed");
+                } 
+               
+            
+    }});
+
+
+    
+  });
+
+  
+
+});
+
+
+        
+        </script>
+
+
+<body>
+
+
+     <!--main header-->
+    <!--main header-->
+    <div class="container">
+        <img class="header_img" src="assets/images/header4.jpg" />
+        
+         <!--Main Navigation-->
+
+         <!-- navbar navbar-default -->
+        <div class="navbar navbar-default" role="navigation">
+            
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                
+                
+            </div><!-- /navbar-header -->
+            
+            <!-- navbar -->
+<div class="navbar-collapse collapse navigation">
+   <ul class="nav navbar-nav">
+     <li>
+    <a href="Updated_Home_Page.html"><i style="margin-right: 5px;" class="fa fa-home"></i>Home</a>
+     </li>
+     
+     <li>
+         <a href="AboutUS.html"><i style="margin-right: 5px;"class="fa fa-id-card"></i>About Us</a>
+     </li>
+            
+     <li class="dropdown">
+             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Services <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+                <li><a href="https://bhunaksha.ap.gov.in" target="_blank">Bhunaksha</a></li>
+                <li><a href="https://bhunaksha.ap.gov.in/e-Secure/index.xhtml" target="_blank">Digital Signing</a></li>
+                <li><a href="https://bhunaksha.ap.gov.in/bhunaksha/28/indexmain.jsp" target="_blank">Online SubDivision</a></li>
+                <li><a href="https://bhunaksha.ap.gov.in/bhunaksha/28/indexmain.jsp" target="_blank">Geo reference</a></li>
+             </ul>
+         </li>
+            
+            
+         <li class="dropdown">
+                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">RTI Act <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="#">RTI Act-1</a></li>
+                     <li><a href="#">RTI Act-2</a></li>
+                 </ul>
+         </li>
+            
+         <li>
+         <a href="PDF_test.html"><i class="fa fa-book"></i> Training </a>
+         </li>
+            
+         <li>
+         <a href="#"><i class="fa fa-bell"></i> Circulars</a>
+         </li>
+            
+         <li>
+             <a href="ContactUs.html"><i class="fa fa-envelope"></i> Contact Us</a>
+         </li>
+
+         <li>
+            <a href="Galary_LandServey.html"><i class="fa fa-image"></i> Galary</a>
+        </li>
+            
+         <li>
+             <a href="Login_LandServey.html"><i class="fa fa-sign-in"></i> Login</a>
+        </li>
+   </ul>
+</div><!-- /navbar -->
+            
+</div><!-- /navbar navbar-default -->
+
+<!-- Login Form -->
+<div class="form-div">
+    
+    <h2>Login Here</h2>
+    <form name="vform">
+        <div id="username_div">
+       <input type="text" id="username" name="User Name" placeholder="User Name">
+        <div id="name_error"></div>
+        </div>
+        <br>
+
+        <div id="pass_confirm_div"></div>
+        <input type="password" id="password" name="Password" placeholder="Password" autocomplete="off">
+        <div id="password_error"></div>
+        <br>
+    </form>
+
+    <input id="loginButton" type="submit" value="Login">
+    <a id="register" href="#">REGISTER</a>
+</div>
+
+ </div>
+
+
+ <div class="footer">
+    <!-- Main Footer -->
+
+<table class="footer_table" style="width: 100%">
+
+<tr>
+   <td style="width: 20%"></td>
+   <td style="width: 60%">
+       <p>
+               Designed, Developed & Maintained by : National Informatics Centre, APSC, Amaravathi.</br>
+               Disclaimer : Content on this website is published and managed by Department of AP, GoAP, Amaravathi.
+              
+       </p>
+   </td>
+
+   <td style="width: 20%; text-align: right">
+       <img src="img/niclogo.png">
+   </td>
+</tr>
+
+</table>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1406 @@
+
+<html>
+<head>
+<title>Department of Survey, Settlements & Land Records</title>
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="icon" type="image/x-icon" href="assets/images/ap-govt-logo.png">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="ContactUs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Patua+One&display=swap" rel="stylesheet">
+
+</head>
+
+<script>
+
+$(document).ready(function(){
+
+   // alert();
+
+   var $content = $(".key_images").hide();
+  $(".button_hide").on("click", function(e){
+    $(this).toggleClass("expanded");
+    if ($(this).hasClass('expanded')) {
+        $("div.plus").hide().removeClass("closed");
+        $("div.minus").show().addClass("opened");
+        e.preventDefault();
+     } else {
+        $("div.plus").show().addClass("closed");
+        $("div.minus").hide().removeClass("opened");
+        e.preventDefault();
+
+     }
+    $content.slideToggle();
+    
+  });
+
+
+  $(".dropdown-submenu").hover(function () {
+     $(this).find('ul').slideToggle('medium');
+    });
+
+ 
+
+});
+
+</script>
+
+<body>
+
+<!--main header-->
+<div class="container">
+    <img class="header_img" src="assets/images/header4.jpg" />
+            
+    <!--Main Navigation-->
+
+    <!-- navbar navbar-default -->
+<div class="navbar navbar-default navigation" role="navigation">
+            
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                
+                
+            </div><!-- /navbar-header -->
+            
+            <!-- navbar -->
+<div class="navbar-collapse collapse">
+   <ul class="nav navbar-nav">
+     <li>
+    <a href="Updated_Home_Page.html"><i style="margin-right: 5px;" class="fa fa-home"></i>Home</a>
+     </li>
+     
+     <li>
+         <a href="AboutUS.html"><i style="margin-right: 5px;"class="fa fa-id-card"></i>About Us</a>
+     </li>
+
+
+    
+            
+     <li class="dropdown">
+             <a href="#" data-toggle="dropdown" class="dropdown-toggle" type="button">Services <b class="caret"></b></a>
+             
+             <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Citizen Services<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="submenu">
+                  <li><a tabindex="-1" href="https://meebhoomi.ap.gov.in/" target="_blank">MeeBhoomi</a></li>
+                  <li><a tabindex="-1" href="http://apdept.meeseva.gov.in/APSDCDeptPortal/UserInterface/Admin/DynamicCitizenCharterReport.aspx" target="_blank">Meeseva Citizen Report</a></li>
+                  <li><a tabindex="-1" href="https://ap.meeseva.gov.in/DeptPortal/Meeseva-Applications.html" target="_blank">Meeseva aplication forms</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Employee Services<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="submenu">
+                  <li><a tabindex="-1" href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" target="_blank">Meeseva</a></li>
+                  <li><a tabindex="-1" href="https://bhunaksha.ap.gov.in" target="_blank">Bhunaksha</a></li>
+                  <li><a tabindex="-1" href="https://bhunaksha.ap.gov.in/bhunaksha/28/indexmain.jsp" target="_blank">Online SubDivision</a></li>
+                  <li><a tabindex="-1" href="https://bhunaksha.ap.gov.in/e-Secure/index.xhtml" target="_blank">Digital Signing</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+         </li>
+            
+            
+         <li class="dropdown">
+                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">RTI Act <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="RTIACT_pdf.html">RTI Act-1</a></li>
+                     
+                 </ul>
+         </li>
+            
+         <li>
+         <a href="PDF_test.html"><i class="fa fa-book"></i> Training </a>
+         </li>
+            
+         <li>
+         <a href="#"><i class="fa fa-bell"></i> Circulars</a>
+         </li>
+            
+         <li>
+             <a href="ContactUs.html"><i class="fa fa-envelope"></i> Contact Us</a>
+         </li>
+
+         <li>
+            <a href="Galary_LandServey.html"><i class="fa fa-image"></i> Galary</a>
+        </li>
+            
+         <li>
+             <a href="Login_LandServey.html"><i class="fa fa-sign-in"></i> Login</a>
+        </li>
+   </ul>
+</div><!-- /navbar -->
+            
+</div><!-- /navbar navbar-default -->
+
+
+
+
+<div class="row">
+        <div class="col-lg-12">
+        <h3 class="revenue_head">REVENUE</h3>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+            <div class="col-lg-6 col-md- 6 col-sm-6">
+            <div class="col text-center">
+              <img src="img/01AP033300.jpeg" width="230px" height="200px" alt="" class="img-fluid img-rounded">
+            </div>
+
+            <div class="col text-center">
+                    <span class="span_info"><strong>Dr. Manmohan Singh,IAS</strong></span><br>
+                    <span class="span_info">CCLA & Spl. CS (FAC)</span>
+
+            </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col text-center">
+              <img src="img/Pilli-Subhash-Chandra-Bose-1.jpg" width="230px" height="200px" alt="" class="img-fluid img-rounded">
+            </div>
+
+            <div class="col text-center">
+                    <span class="span_info"><strong>Pilli Subhash Chandrabose</strong></span><br>
+                    <span class="span_info">Hon'ble Deputy Chief Minister &</br>
+                        Minister of Revenue Stamps & Registration</span>
+                    </div>
+        
+            </div>
+
+           
+    </div>
+
+
+    <div class="row">
+            <div class="col-lg-12">
+            <h3 class="revenue_head">DIRECTOR</h3>
+            </div>
+    
+        </div>
+
+    <div class="row">
+
+            <div class="col-lg-12 col-md- 12 col-sm-12">
+                    <div class="col text-center">
+                      <img src="img/nj.jpg" width="230px" height="200px" alt="" class="img-fluid img-rounded">
+                    </div>
+        
+                    <div class="col text-center">
+                            <span class="span_info">Dr N. Prabhakara Reddy,I.A.S.</span><br>
+                            <span class="span_info">Director of Survey,Settlements and Land Records</span>
+                    </div>
+        
+                    </div>
+
+    </div>
+
+
+
+    
+
+
+    <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3 class="revenue_key">DIRECTORATE<button class="button_hide" type="button"></button></h3>
+            </div>    
+    </div>
+
+<div class="key_images">
+    <div class="row">
+
+            <div class="col-lg-6 col-md- 6 col-sm-6">
+                    <div class="col text-center">
+                      <img src="img/kumar ad.jpg" width="230px" height="200px" alt="" class="img-fluid img-rounded">
+                    </div>
+
+                    <div class="col text-center">
+                        <span class="span_info">D L B L KUMAR</span><br>
+                        <span class="span_info">ADHQS</span>
+                    </div>
+            
+            </div>
+        
+            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col text-center">
+              <img src="img/RDD KURNOOL.jpg" width="230px" height="200px" alt="" class="img-fluid img-rounded">
+            </div>
+
+            <div class="col text-center">
+            <span class="span_info">K Venkateswar Rao -- RDD KURNOOL</span><br>
+            <span class="span_info">AD HQS</span>
+            </div>
+                
+            </div>
+        
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">CENTRAL SURVEY OFFICE</h3>
+        </div>    
+    </div>
+
+
+
+    <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col text-center">
+                      <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col text-center">
+                      <span class="span_info">Name</span><br>
+                      <span class="span_info">Designation</span>
+                    </div>
+            
+            </div>
+        
+            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+
+            
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+    
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+                    
+                </div>
+
+        
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">A.P. Survey Training Academy</h3>
+        </div>    
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">RDD Office, Kakinada</h3>
+        </div>    
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+   
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">SRIKAKULAM</h3>
+        </div>    
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">VIZIANAGARAM</h3>
+        </div>    
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">VISAKHAPATNAM</h3>
+        </div>    
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+  
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">EAST GODAVARI</h3>
+        </div>    
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+   
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">WEST GODAVARI</h3>
+        </div>    
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">KRISHNA</h3>
+        </div>    
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>
+    
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">RDD Office, Kurnool</h3>
+        </div>    
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+    </div>  
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">GUNTUR</h3>
+        </div>    
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">PRAKASAM</h3>
+        </div>    
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+    
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">NELLORE</h3>
+        </div>    
+    </div>
+
+
+   
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">CHITTOOR</h3>
+        </div>    
+    </div>
+
+    
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">KADAPA</h3>
+        </div>    
+    </div>
+
+    
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">ANANTHAPURAMU</h3>
+        </div>    
+    </div>
+
+    
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="revenue_key">KURNOOL</h3>
+        </div>    
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col text-center">
+                  <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+                </div>
+
+                <div class="col text-center">
+                  <span class="span_info">Name</span><br>
+                  <span class="span_info">Designation</span>
+                </div>
+        
+        </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col text-center">
+          <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+        </div>
+
+        <div class="col text-center">
+          <span class="span_info">Name</span><br>
+          <span class="span_info">Designation</span>
+        </div>
+            
+        </div>
+
+
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col text-center">
+              <img src="img/contact.jpg" width="230px" height="200px" alt="" class="img-fluid">
+            </div>
+
+            <div class="col text-center">
+              <span class="span_info">Name</span><br>
+              <span class="span_info">Designation</span>
+            </div>
+                
+            </div>
+
+    
+</div>
+
+
+</div>
+
+</div>
+
+        <div class="footer">
+            <!-- Main Footer -->
+        
+        <table class="footer_table" style="width: 100%">
+        
+        <tr>
+           <td style="width: 20%"></td>
+           <td style="width: 60%">
+               <p>
+                       Designed, Developed & Maintained by : National Informatics Centre, APSC, Amaravathi.</br>
+                       Disclaimer : Content on this website is published and managed by Department of AP, GoAP, Amaravathi.
+                      
+               </p>
+           </td>
+        
+           <td style="width: 20%; text-align: right">
+               <img src="img/niclogo.png">
+           </td>
+        </tr>
+        
+        </table>
+        
+        </div>
+        
+
+</body>
+
+
+
+
+
+</body>
+</html>
